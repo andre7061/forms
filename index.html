@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="content">
+        <form class="form" id="registrForm"  method="post">
+            <h2 class="form__title">Регистрация</h2>
+            <p>
+                <label class="form__label" for="name">Введите имя:</label>
+                <input class="form__input" type="text" name="name" id="name" required />
+            </p>
+            <p>
+                <label class="form__label" for="email">Введите email:</label>
+                <input class="form__input" type="email" name="email" id="email" required />
+            </p>
+            <p>
+                <label class="form__label" for="password">Введите пароль:</label>
+                <input class="form__input" type="password" name="password" id="password" required minlength="8" />
+            </p>
+            <p>
+                <label class="form__label" for="password2">Введите пароль повторно:</label>
+                <input class="form__input" type="password" name="password2" id="password2" required minlength="8" />
+                <span class="input_error">Пароли не совпадают</span>
+    
+            </p>
+            <p>
+                <label class="form__label" for="city-select">Ваш город</label>
+                <select class="form__select" name="city" id="city-select" required>
+                    <option class="form__option" value="">-- Выберите язык --</option>
+                    <option class="form__option" value="ru">Русский</option>
+                    <option class="form__option" value="en">En</option>
+                </select>
+            </p>
+            <button class="form__btn" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
